@@ -116,7 +116,52 @@ Class can only have 2 of the access specifiers(class can't be declared as privat
 
 ## DataTypes in Java
 **Variable** is a memory location in a process that store data.
-Since 
+**Statically typed** - Type of variabel must be known before compiling. So that JVM can allocate variabel memory based on the type.
+### Types of Data Types
+    - Primitive data types - default 
+    - Reference/Object data types - derived from object class directly or indirectly
 ### Numeric Data Types
 
-1. 
+1. Integer Types: only holds whole numbers
+2. Floating Types: can hold fractional numbers
+    | Data type | Size(Bytes) | Sign |
+    |-----------|-------------|------|
+    |  `byte`   |  1   | Signed|
+    |  `short`  |  2   | Signed|
+    |  `int`    |  4   | Signed|
+    |  `long`   |  8   | Signed| 
+    |  `float`  |  4   | Signed|
+    |  `Double` |  8   | Signed|
+
+### Non Numeric Data Types
+    | Data type | Size(Bytes) |
+    |-----------|-------------|
+    | `char` | 2 |
+    | `boolean` | 1 |
+**Literal** - Fixed or constant value stored in a variable. Can be used for all primitive data types
+    1. For Integers in 3 ways:
+        - Decimal : Starts with a number
+        - Octal : Start with '0'
+        - Hexadecimal : Start with `0x'
+
+**Constant** - is a variable whose value once assigned cannot change.
+ Declaration using `final` keyword.
+
+ ## Escape Sequence
+ They are used to provide alternative meaning to series of characters.
+ Usually start with `\` (backlash)
+
+ ## Immutable String
+ **Immutability** - State of an object can not be changed after initialization(created).(i.e. We can't overwrite a new value to our object once it is created)
+ - The memory location of the variable is going to changed if we change the value of the variable.
+ - String is a immutable.
+ - String is a reference type(i.e. it's not primitive).(If string is assigned a new value the JVM will create a new string on **heap memory**)
+
+## String Builder Class
+Used to Initialize and reintialize strings without creating new string in memory(i.e. the class is mutable)
+    - Key Methods Include
+        - **Append(arg)** == String + String
+        - **Insert(arg)**
+        - **Delete(arg)**
+## Wrapper Classes
+To Convert primitive datatypes into an object.
